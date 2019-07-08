@@ -1,0 +1,37 @@
+# Dustin Cooksey
+
+# 08 July, 2019
+
+# CTI-110 P4HW2
+
+# This program will take a series of positive numbers and 
+# display their sum.
+
+def Main():
+    print("Please enter a positive number to begin"
+          " or a negative number to end")
+    number = int(input())
+    
+    while number > -1:
+        print("Which number would you like to add to it?")
+        number2 = int(input())
+        sum = number + number2
+        print("Would you like to enter another number?"
+              " Enter a negative number to terminate.")
+        number = int(input())
+        print(sum + number)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Main()
