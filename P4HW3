@@ -29,6 +29,27 @@ def Main():
 
 Main()
 
+## Ask the user for a number to begin to find the sum.
+
+## Assign the sum value to the same value as the first number
+## to give sum a value.
+
+## Deassign sum value as same value as number so as not
+## to automatically double the first number.
+
+## Use a while loop to say while number is greater than
+## negative 1 to ask for a new number to add to sum.
+
+## Prompt the user for a new value for integer number.
+
+## Use the while loop to continue to test for the value
+## of number so as long as it is greater than -1 it keeps
+## adding the new integer to sum.
+
+## Once exiting the loop after the user enters a negative number
+## display the final total.
+
+
 
 
 
