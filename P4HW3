@@ -12,29 +12,31 @@ def Main():
           " or a negative number to end")
     number = int(input())
     sum = number
+    sum -= number
     
     while number > -1:
-        print("Which number would you like to add to it?")
-        print("Enter a negative number to terminate the program")
-        number = int(input())
         sum += number
         print("Your new number is", +(sum))
-        print("Enter a new number")
+        print("Enter a new number to add to it")
+        print("Or a negative number to terminate")
         number = int(input())
         
         
-
-
-
-
-
-
-
-
-
-
+    print("Your final number was", +(sum))
 
 
 
 
 Main()
+
+
+
+
+
+
+
+
+
+
+
+
