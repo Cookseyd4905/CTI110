@@ -11,15 +11,18 @@ def Main():
     print("Please enter a positive number to begin"
           " or a negative number to end")
     number = int(input())
+    sum = number
     
     while number > -1:
         print("Which number would you like to add to it?")
-        number2 = int(input())
-        sum = number + number2
-        print("Would you like to enter another number?"
-              " Enter a negative number to terminate.")
+        print("Enter a negative number to terminate the program")
         number = int(input())
-        print(sum + number)
+        sum += number
+        print("Your new number is", +(sum))
+        print("Enter a new number")
+        number = int(input())
+        
+        
 
 
 
