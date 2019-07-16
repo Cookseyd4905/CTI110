@@ -1,0 +1,85 @@
+## Dustin Cooksey
+
+## July 16 2019
+
+## CTI-110 P5HW1 - Random Number Game
+ 
+## This programs generates a random number and asks the user
+## to guess the number returning whether the user is over,
+## under, or guesses the number correctly.
+
+import random
+
+
+def Main():
+    print("Would you like to play the number game?")
+    print("Enter y for Yes or n for No")
+    playAgain = str(input())
+    if playAgain == "y" or playAgain == "Y":
+        numberGame()
+    elif playAgain == "n" or playAgain == "N":
+        print("Thank you for playing!")
+    else:
+        print("Your input was invalid")
+    
+        
+def numberGame():
+    guesses = 2
+    number = random.randint(1, 100)
+    print("Please try to guess the number")
+    numberGuess = int(input())
+    if number > numberGuess:
+        print("Your guess was too low")
+    elif number < numberGuess:
+        print("Your guess was too high")
+    else:
+        print("Congrats! You guessed the number!")
+    
+    
+    
+
+    while numberGuess != number:
+        print("Please take another guess")
+        numberGuess = int(input())
+        if number > numberGuess:
+            print("Your guess was too low")
+        elif number < numberGuess:
+            print("Your guess was too high")
+        else:
+            print("You guessed right! Congrats!")
+            print("It took you", (guesses), "tries")
+            Main()
+        guesses = guesses + 1
+
+
+
+
+
+
+
+
+Main()
+
+
+## Ask the user if the user would like to play the number game.
+
+## Create a function called numberGame to use as the game.
+
+## Create variable guesses to track the number of attempts
+## for the user to guess the amount and set equal to 2.
+
+## Generate the random number using the number generator.
+
+## Ask the user to guess the number and return whether it is too high,
+## low, or correct using if else statements.
+
+## Put the numberGame function inside a while loop so that it runs
+## until the user guesses correctly.
+
+## Display the number of guesses whenver the user guesses correctly and
+## give the option to play again using the playAgain variable.
+
+
+
+ 
+
